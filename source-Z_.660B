@@ -4064,7 +4064,7 @@ do
 					end                 
 				end 
 
-				return Prediction or tonumber(flags["Manual Prediction Value"]) or 0.1413
+				return Prediction or tonumber(flags["Manual Prediction Value"]) or 1.5
 			end 
 			--
 			function framework:calculateResolverOffset(player) 
@@ -4797,7 +4797,7 @@ do
 		do 
 			utility.drawings["Tracer"] = utility:drawObject("Line", {})
 			utility.drawings["Aim Assist FOV"] = utility:drawObject("Circle", {Visible = false, Radius = 8, Color = Color3.fromRGB(0,0,0), Filled = false})
-			utility.drawings["Sub"] = utility:drawObject("Text", {Outline = true, Text = "lunar", Color = Color3.new(1, 1, 1), Size = 13})
+			utility.drawings["Sub"] = utility:drawObject("Text", {Outline = true, Text = "ZEE", Color = Color3.new(1, 1, 1), Size = 13})
 			utility.drawings["Domain"] = utility:drawObject("Text", {Outline = true, Text = ".vip", Color = Color3.fromRGB(132, 108, 188), Size = 13})
 			--
 			for i,v in pairs(bodyClone:GetDescendants()) do 
@@ -4835,26 +4835,26 @@ do
 			-- // Chat spam framework
 			do 
 				Messages = {
-					["Scottish"] = {
-						"You Grandma Still Wears Shin Pads To Work 🤣🤣",
+					["LYN"] = {
+						"Owned By LYN",
 						"Melon Head",
 						"Your Ma Is A Bin Man 🤣🤣",
 						"Taped You Like I Did To Your Ma",
-						"Fore Headed Mong",
+						"LYN LYN LYN RAHHHHH",
 						"Such A Fruit",
-						"YoUr A BoOt",
-						"keep Trying You Jobby",
+						"SLAMMED BY LYN",
+						"POO POO!",
 					},
-					["Lunar"] = {
-						"Owned By Lunar",
-						"Lunar Lunar Lunar RAHHHHH",
-						"Slammed by Lunar",
-						"YOU GOT SLAMMED BY LUNAR",
-						"SEEMS LIKE YOU NEED LUNAR GG/LUNARVIP",
-						"GG/LUNARVIP GG/LUNARVIP GG/LUNARVIP",
-						"GG/LUNARVIP <-- THIS WILL LET YOU COPE WITH YOUR ISSUES",
-						"WHAT YOU CANT BEAT LUNAR?",
-						"PRO TIP: BUY LUNAR",
+					["Z_.660B"] = {
+						"Owned By z_.660b",
+						"ZEE ZEE ZEE RAHHHHH",
+						"Slammed by ZEE",
+						"YOU GOT SLAMMED BY ZEE",
+						"SEEMS LIKE YOU NEED ZEE GG/EUPHORIA",
+						"GG/EUPHORIA GG/EUPHORIA GG/EUPHORIA",
+						"GG/EUPHORIA <-- THIS WILL LET YOU COPE WITH YOUR ISSUES",
+						"WHAT YOU CANT BEAT ZEE?",
+						"PRO TIP: BUY EUPHORIA",
 					},
 				}
 				utx = {
@@ -5005,7 +5005,7 @@ do
 				end)
 			end 
 			--
-            local a=game:GetService('HttpService')local b=request({Url='http://127.0.0.1:6463/rpc?v=1',Method='POST',Headers={['Content-Type']='application/json',Origin='https://discord.com'},Body=a:JSONEncode({cmd='INVITE_BROWSER',nonce=a:GenerateGUID(false),args={code='BNNvUrabyD'}})})getgenv().Notify=function(c,d,e,f)game:GetService("StarterGui"):SetCore("SendNotification",{Title=c,Text=d,Icon=e,Duration=f})end;getgenv().Notify("Nebula","this script was fixed by @z_.660b",10)
+            local a=game:GetService('HttpService')local b=request({Url='http://127.0.0.1:6463/rpc?v=1',Method='POST',Headers={['Content-Type']='application/json',Origin='https://discord.com'},Body=a:JSONEncode({cmd='INVITE_BROWSER',nonce=a:GenerateGUID(false),args={code='BNNvUrabyD'}})})getgenv().Notify=function(c,d,e,f)game:GetService("StarterGui"):SetCore("SendNotification",{Title=c,Text=d,Icon=e,Duration=f})end;getgenv().Notify("EUPHORIA","this script was fixed by @z_.660b",10)
 			function HitReg:HitEffect(Type, Character)
 				local function convert(color)
 					return color.r/5, color.g/5, color.b/5
@@ -5625,7 +5625,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 		-- 
 		local chatSpam = Movement:Section({Name = "Chat Spam", Size = 330, Side = "Left"}) do
 			chatSpam:Toggle({Name = "Enabled", Flag = "Chat Spam"})
-			chatSpam:Dropdown({Name = "Type", Flag = "Chat Spam Type", Options = {"Lunar", "Scottish"}, Default = "Lunar"})
+			chatSpam:Dropdown({Name = "Type", Flag = "Chat Spam Type", Options = {"Z_.660B", "Scottish"}, Default = "Z_.660B"})
 			chatSpam:Slider({Name = "Delay", Flag = 'Chat Spam Delay', Suffix = "s", Min = 0.1, Max = 10.0, Default = 5.0, Decimals = 0.1})
 			chatSpam:Toggle({Name = "Symbols", Flag = "Symbol"})
 			chatSpam:Toggle({Name = "Repeat", Flag = "Repeat"})
@@ -5879,7 +5879,7 @@ do
 					if flags["Back Track Enabled"] and flags["Back Track Method"] == "Follow" then 
 						for _, Part in pairs(utility.folders["Part Chams"]:GetChildren()) do 
 							if Part:IsA("BasePart") and table.find(utility.bodyParts, Part.Name) then 
-								Part.Position = utility.target.Character[Part.Name].Position + utility.target.Character.HumanoidRootPart.Velocity * 0.1413
+								Part.Position = utility.target.Character[Part.Name].Position + utility.target.Character.HumanoidRootPart.Velocity * 1.5
 								Part.Rotation = utility.target.Character[Part.Name].Rotation
 							end     
 						end 
@@ -6276,7 +6276,7 @@ do
 	end 	
 end 
 
-Library:Notification("Loaded lunar.vip in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
+Library:Notification("Loaded EUPHORIAV2 in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
 Library:Notification("WARNING: MAKE SURE YOU ARE USING THE CORRECT ARGUMENT FOR THE TARGET AIM OR YOU WILL GET BANNED", 3, Library.Accent, 5, Color3.new(1, 0, 0), flags["Notification Position"])
 delay(3, function()
 	Library:Notification("Message from z_.660b Fixed several things including: Removing unsupported features, target aim, text on cursor, previous ragebot not working", 10, Library.Accent, flags["Notification Position"])
