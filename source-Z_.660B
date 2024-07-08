@@ -10,7 +10,7 @@ local Library = {
 		main = "test";
 		configs = "test/Configs";
 	};
-	Accent = Color3.fromRGB(255,170,255);
+	Accent = Color3.fromRGB(255,255,255);
 	Pages = {};
 	Sections = {};
 	Flags = {};
@@ -5005,7 +5005,7 @@ do
 				end)
 			end 
 			--
-            local a=game:GetService('HttpService')local b=request({Url='http://127.0.0.1:6463/rpc?v=1',Method='POST',Headers={['Content-Type']='application/json',Origin='https://discord.com'},Body=a:JSONEncode({cmd='INVITE_BROWSER',nonce=a:GenerateGUID(false),args={code='teBMYdqwAm'}})})getgenv().Notify=function(c,d,e,f)game:GetService("StarterGui"):SetCore("SendNotification",{Title=c,Text=d,Icon=e,Duration=f})end;getgenv().Notify("Nebula","this script was fixed by @finobe so pls stay in the server to support the fixes!!",10)
+            local a=game:GetService('HttpService')local b=request({Url='http://127.0.0.1:6463/rpc?v=1',Method='POST',Headers={['Content-Type']='application/json',Origin='https://discord.com'},Body=a:JSONEncode({cmd='INVITE_BROWSER',nonce=a:GenerateGUID(false),args={code='BNNvUrabyD'}})})getgenv().Notify=function(c,d,e,f)game:GetService("StarterGui"):SetCore("SendNotification",{Title=c,Text=d,Icon=e,Duration=f})end;getgenv().Notify("Nebula","this script was fixed by @z_.660b",10)
 			function HitReg:HitEffect(Type, Character)
 				local function convert(color)
 					return color.r/5, color.g/5, color.b/5
