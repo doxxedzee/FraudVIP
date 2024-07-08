@@ -3864,7 +3864,7 @@ do
 				-- 
 				local endPosition;
 				local fovCheck;  
-				local Resolver, Prediction = flags["Resolver"], flags["Aim Assist Manual Prediction Value"] or 1.5
+				local Resolver, Prediction = flags["Resolver"], flags["Aim Assist Manual Prediction Value"] or 0.15
 				local Target = utility.target or aimAssistTarget
 				local Part = (flags["Aim Assist Jump Prediction"] and Target.Character.Humanoid.FloorMaterial == Enum.Material.Air and "RightFoot") or flags["Aim Assist Single Hit Part"]
 				local characterOffset = Resolver and framework:calculateResolverOffset(Target) * Prediction or Target.Character.HumanoidRootPart.Velocity * Prediction
@@ -4064,7 +4064,7 @@ do
 					end                 
 				end 
 
-				return Prediction or tonumber(flags["Manual Prediction Value"]) or 1.5
+				return Prediction or tonumber(flags["Manual Prediction Value"]) or 0.15
 			end 
 			--
 			function framework:calculateResolverOffset(player) 
@@ -5879,7 +5879,7 @@ do
 					if flags["Back Track Enabled"] and flags["Back Track Method"] == "Follow" then 
 						for _, Part in pairs(utility.folders["Part Chams"]:GetChildren()) do 
 							if Part:IsA("BasePart") and table.find(utility.bodyParts, Part.Name) then 
-								Part.Position = utility.target.Character[Part.Name].Position + utility.target.Character.HumanoidRootPart.Velocity * 1.5
+								Part.Position = utility.target.Character[Part.Name].Position + utility.target.Character.HumanoidRootPart.Velocity * 0.15
 								Part.Rotation = utility.target.Character[Part.Name].Rotation
 							end     
 						end 
