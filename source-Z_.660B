@@ -6278,7 +6278,7 @@ do
 	end 	
 end 
 
-Library:Notification("Loaded EUPHORIAV2 in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
+Library:Notification("Loaded EUPHORIA in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
 Library:Notification("WARNING: MAKE SURE YOU ARE USING THE CORRECT ARGUMENT FOR THE TARGET AIM OR YOU WILL GET BANNED", 3, Library.Accent, 5, Color3.new(1, 0, 0), flags["Notification Position"])
 delay(3, function()
 	Library:Notification("Message from z_.660b Fixed several things including: Removing unsupported features, target aim, text on cursor, previous ragebot not working", 10, Library.Accent, flags["Notification Position"])
