@@ -250,7 +250,7 @@ local Visuals = {
 	["Settings"] = { 
 		["Line"] = {
 		    Thickness = 1,
-		    Color = Color3.fromRGB(0, 255, 0)
+		    Color = Color3.fromRGB(10, 100, 10)
 	    },
 		["Text"] = {
 			Size = 13,
